@@ -5,8 +5,13 @@
 
 using namespace std;
 
-morse_code(){
+void morse_code::morse_code(){
 }
-void add_node(char, string){
+void morse_code::add_node(char, string){
+}
+string morse_code::decode(string){
+}
+string morse_code::encode(string){
 }
 };
+
