@@ -1,17 +1,16 @@
-#pragma oncce
-#include <iostream>
-#include <string>
-#include <map>
-
-using namespace std;
+#pragma once
+#include<string>
+#include<map>
+#include "Binary_Tree.h"
 
 class morse_code {
-private:
-	Binary_Tree Tree;
-	map<char, string> Map_Key;
-	morse_code();
-	void add_node(char, string);
 public:
-	string decode(string);
-	string encode(string);
+	morse_code();
+	//morse_code(std::string);
+	std::string encode(std::string);
+	std::string decode(std::string);
+private:
+	Binary_Tree<char> decodeTree;
+	std::map<char, std::string> characterMap;
+	void addnode(char, std::string);
 };
